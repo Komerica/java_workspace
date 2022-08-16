@@ -6,6 +6,7 @@ public class ForEach {
         // For을 만듬!
         // Array(배열)과 For의 조합을 쉽게 사용하기 위해서 For-Each를 만듬!
         String[] members = {"Jeff", "Sa", "Joo"};
+        // Java의 For Each 문은 Python의 For in 문과 비슷한듯!
         for (String e : members) {
             System.out.println(e + " is served!");
         }
