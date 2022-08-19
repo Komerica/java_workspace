@@ -7,7 +7,7 @@ class Calculator3 {
     // : Class Method 를 사용하면 sum/avg Method를 쓰기 위해
     //   Instance를 일일이 만들어야 했던 CalculatorDemo2와는 달리,
     //   메모리도 절약할 수 있고 더 빠르게 동작하는 프로그램을 만들 수 있음!
-    //  **Instanc를 만들면 메모리 차지함!
+    //  **Instance를 만들면 메모리 차지함!
     public static void sum(int left, int right) {
         System.out.println(left + right);
     }
