@@ -8,6 +8,9 @@ package egoing_java;
 // 1. 부모/자식 Method 이름이 같아야함!
 // 2. 부모/자식 매개변수의 숫자와 데이터 타입 그리고 순서가 같아야함!
 // 3. 부모/자식 Method의 return type이 같아야함!
+//    Ex) if 부모 return type = void, 자식 return type = void
+//    Ex) if 부모 return type = int, 자식 return type = int
+// => Overriding 을 하기 위해서 부모 클래스의 method의 서명(signature)와 자식 클래스의 method의 서명(signature)이 일치해야 한다!
 
 class Calculator7 {
     int left, right;
@@ -31,9 +34,9 @@ class SubtractionCalculator3 extends Calculator7 {
     public void subtract() {
         System.out.println(this.left - this.right);
     }
+    // overriding을 하기 위해서는 부모의 return type과 자식의 return type(int)이 같아야 한다!
     public int avg() {
-        // overriding을 하기 위해서는 부모의 return type과 자식의 return type이 같아야 한다!
-        return super.avg();
+        return super.avg(); // 자식 method가 부모 method를 호출하기 위해서는 super라는 keyword를 사용!
     }
 }
 
