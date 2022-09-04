@@ -24,9 +24,11 @@ class Calculator7 {
         this.left = left;
         this.right = right;
     }
+
     public void sum() {
         System.out.println(this.left + this.right);
     }
+
     public int avg() {
         return (this.left + this.right) / 2;
     }
@@ -36,9 +38,11 @@ class SubtractionCalculator3 extends Calculator7 {
     public void sum() {
         System.out.println("실행 결과는 " + (this.left + this.right) + "입니다.");
     }
+
     public void subtract() {
         System.out.println(this.left - this.right);
     }
+
     // overriding을 하기 위해서는 부모의 return type과 자식의 return type(int)이 같아야 한다!
     public int avg() {
         return super.avg() + 2;
