@@ -1,6 +1,6 @@
-package SamePackage;
+package egoing_java.SamePackage;
 
-import OtherPackage.*;
+import egoing_java.OtherPackage.*;
 
 //          같은클래스  같은패키지  다른패키지/서브클래스(상속)   관계없음
 // public       🟢       🟢              🟢                🟢

@@ -1,6 +1,6 @@
-package SamePackage;
+package egoing_java.OtherPackage;
 
-public class Same {
+public class Nothing {
     public void _public() {
         System.out.println("public");
     }
