@@ -1,4 +1,4 @@
-package egoing_java.outter;
+package egoing_java.outer;
 
 import egoing_java.inner.*;
 

@@ -5,7 +5,7 @@ public class Array {
         // Array 만드는 법!
         // 방법1)
         String[] classGroup = {
-                "Joo", "Hwan", "Je", "Pil"
+                "Jooh", "wan", "Jep", "il"
         };
         System.out.println(classGroup[0]);
         System.out.println(classGroup[1]);
