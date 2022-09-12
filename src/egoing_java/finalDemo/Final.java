@@ -6,9 +6,9 @@ package egoing_java.finalDemo;
 // 1. 필드(변수)에서의 final
 //   : 한번 세팅된 값을 변경되지 못하도록 한다.
 // 2. 메소드(method)에서의 final
-//   : 상속과 관련되어 있다
+//   : overriding 을 할 수 없다.
 // 3. class 에서의 final
-//   :
+//   : 상속을 할 수 없다.
 
 
 // 1. 필드(변수)에서의 final
