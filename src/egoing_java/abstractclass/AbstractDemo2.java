@@ -7,7 +7,8 @@ abstract class Calculator {
         this.right = right;
     }
     // ↓ 앞에 접근제어자인 public 이 없다는 말은 _sum() method의 접근제어자는 default라는 뜻이고,
-    // default 접근제어자는 같은 패키지(package)에서만 사용가능한 것!
+    //   default 접근제어자는 같은 패키지(package)에서만 사용가능한 것!
+    //   public 접근제어자는 다른 패키지에서도 사용가능!
     int _sum() {
         return this.left + this.right;
     }
