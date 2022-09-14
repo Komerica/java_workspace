@@ -1,2 +1,60 @@
-package egoing_java.interfaceDemo3;public class InterfaceDemo3 {
+package egoing_java.interfaceDemo3;
+
+// 🟩 interface 의 특징 3가지
+
+// 1. 하나의 클래스가 여러개의 인터페이스를 구현할 수 있다!
+interface I1 {
+    public void x();
 }
+interface I2 {
+    public void z();
+}
+// 하나의 클래스(A) 안에 여러개의 interface(I1, I2)를 구현가능!
+//   ✔ 클래스 상속과 차이점을 따지자면, 상속받는 클래스(하위클래스)는 하나의 부모클래스에서만 상속받을 수 있다!
+class A implements I1, I2{
+    public void x(){}
+    public void z(){}
+}
+
+
+// -----------------------------------------------------------------------------------------
+
+
+// 2. 인터페이스도 상속이 된다!
+interface I3 {
+    public void x();
+}
+interface I4 extends I3 {
+    public void z();
+}
+class B implements I4 {
+    public void x(){}
+    public void z(){}
+}
+
+
+// -----------------------------------------------------------------------------------------
+
+
+// 3. 인터페이스의 멤버는 반드시 public 이여야 한다!
+//    ** 여기서 주의해야할 점..? **
+//    -> public을 생략하면 접근제어자가 default가 되는 것이 아니라 public이 되는것!
+//       interafce의 멤버는 무조건 public!!!
+interface I5 {
+    // private void x();    // 오류발생
+}
+
+
+// -----------------------------------------------------------------------------------------
+
+
+// 🟩 abstract VS interface 차이점
+//  🟠 interface(인터페이스)
+//      1) 클래스가 아닌 인스턴스라는 고유한 형태를 가지고 있음. (그래서 정의할때 class 키워드를 붙이지 않음)
+//      2) 구체적인 로직이나 상태를 절대!! 못 가짐. (interface는 반드시 body(본체)가 없는 메소드들만을 가지고 있어야함!)
+//  🟡 abstract(추상클래스)
+//      1) 일반적인 클래스이다! (그래서 정의할때 class 라는 키워드가 있음)
+//      2) 구체적인 로직이나 상태를 가질 수 있음.
+//         (추상클래스 안에 추상메소드가 아닌 일반메소드가 존재할 수 있다는 말!)
+//         (추상클래스 안의 추상메소드일 경우에는 절대 body를 가질 수 없음!..
+//          ..말그대로 추상적인 것이라 그 추상클래스를 상속하는 자식클래스에서 body를 만들어서 구체화를 해주어야함!)

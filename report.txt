@@ -1,0 +1,5 @@
+Day 		 Total kms covered
+------------------------------
+Day 1			200
+Day 2			500
+Day 3			900
