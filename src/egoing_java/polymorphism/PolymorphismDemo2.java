@@ -1,5 +1,6 @@
 package egoing_java.polymorphism;
 
+// PolymorphismDemo1 과 같이 올리기
 // 블로그 올릴때 A_ -> A   /   B_ -> B 로 변경후 올리자
 
 // 다형성(Polymorphism) -> 초보 시절에는 이해가 가면 너무 좋고, 이해 안되면 언젠가는 알게될 것! 너무 걱정 X
