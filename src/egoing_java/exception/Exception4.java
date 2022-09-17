@@ -33,7 +33,9 @@ public class Exception4 {
         System.out.println(input);
 
         // 🟥 결론
-        // : 예외를 처리하는 과정에서 어떠한 예외는 그것을 반드시 처리하도록 강제하는 형태의 예외가 있고,
-        //   어떠한 예외는 그렇지 않은 예외도 있음.
+        // : 예외를 처리하는 과정에서 어떠한 예외는 그것을 반드시 처리하도록 강제하는 형태의 예외가 있고, (IOException) 
+        //                                                                              → Exception4, 5 참고
+        //   어떠한 예외는 그렇지 않은 예외도 있음. (ArithmeticException, ArrayIndexOutOfBoundsException)
+        //                                    → Exception3 파일 참고!
     }
 }
