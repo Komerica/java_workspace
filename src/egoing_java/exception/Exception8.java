@@ -24,8 +24,8 @@ public class Exception8 {
 //  Error   Exception
 //           ↑     ↑
 //  IOException   RuntimeException
-//                 ↑
-//                ArithmeticException
+//  (Checked)      ↑
+//                ArithmeticException (Unchecked Exception)
 
 // 🟠 부모중에 RuntimeException 이 있는 예외(Exception)는 Unchecked Exception 이라고 한다.
 //     Ex) ArithmeticException
