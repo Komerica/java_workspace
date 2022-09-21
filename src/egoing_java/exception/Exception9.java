@@ -5,7 +5,8 @@ package egoing_java.exception;
 //   가급적이면 기본적으로 제공하는 표준예외를 사용하는 것을 권장!
 //   만약 자신이 하고자 하는 그 작업을 잘 수용할 수 있는 표준 예외 클래스가 없는 경우에 한해서만 예외 클래스를 만들자!
 
-// 🟥 구조도
+// 참고: https://docs.oracle.com/javase/7/docs/api/java/lang/package-tree.html (Class Hierarchy; 클래스 계층구조)
+// 🟥 Class Hierarchy (클래스 계층구조)
 //    Throwable
 //     ↑     ↑
 //  Error   Exception

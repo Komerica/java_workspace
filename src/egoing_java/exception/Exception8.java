@@ -18,7 +18,9 @@ package egoing_java.exception;
 public class Exception8 {
 }
 
-// 🟥 구조도
+
+// 참고: https://docs.oracle.com/javase/7/docs/api/java/lang/package-tree.html (Class Hierarchy; 클래스 계층구조)
+// 🟥 Class Hierarchy (클래스 계층구조)
 //    Throwable
 //     ↑     ↑
 //  Error   Exception
