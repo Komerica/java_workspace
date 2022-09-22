@@ -4,8 +4,8 @@ package egoing_java;
 class Calculator2 {
     // static: static이라는 keyword가 있으면 이 변수(PI)가 class의 멤버(소속)이 됨!
     // -> 이 말은 즉, 모든 instance 내에서 동일한 변수(PI) 값을 갖게 되는 것!
-    // ** static이 없으면 Calculator2.PI로 접근 안됨! (static이 없으면 class의 멤버(소속)이 아니기때문!)
-    // -> static이 없으면 c1.PI  /  c2.PI 로만 접근이 가능하다!
+    // ** static이 없으면 Calculator2.PI로 접근 안됨! (static이 없으면 class의 멤버 소속이 아니기때문!)
+    // -> static이 없으면 인스턴스(Ex; c1, c2)를 만들어서 c1.PI  /  c2.PI 로만 접근이 가능하다!
 
     // 🟩 클래스 변수(Class Variables) = 정적 변수(static variables) ↓
     final static double PI = 3.14; // final 키워드를 사용함으로써 어떤 경우에도 수정 불가능
