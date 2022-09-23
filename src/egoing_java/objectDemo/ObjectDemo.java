@@ -1,4 +1,4 @@
-package egoing_java.Object;
+package egoing_java.objectDemo;
 
 // Class Object 참고: https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 // 클래스 계층 구조 (Class Hierarchy): https://docs.oracle.com/javase/7/docs/api/java/lang/package-tree.html
@@ -16,5 +16,5 @@ package egoing_java.Object;
 //   → https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 //     여기서 "Method Summary" 에 있는 각종 메소드들을 살펴보자!
 
-public class Object {
+public class ObjectDemo {
 }

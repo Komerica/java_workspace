@@ -1,4 +1,4 @@
-package egoing_java.Object;
+package egoing_java.objectDemo;
 
 // 🟩 toString
 // : 객체를 문자화 시켰을때 어떻게 되는가 ?
