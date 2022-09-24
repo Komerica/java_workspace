@@ -10,8 +10,8 @@ class Student {
     //                              Object 데이터 타입을 가진 매개변수 자리로 데이터 타입이 변경(Student → Object)되면서 들어오게 되는데, → (다형성; Polymorphism)
     //                              이렇게 Object 로 데이터 타입이 변경되면, s2 가 갖고 있는 변수인 name 이라는 값에 접근이 불가함
     //                              Why? Object 데이터 타입에는 name 이라고하는 멤버가 존재하지 않기 때문!!!
-    //                              하지만 우리가 결국 필요한 것은 Student 를 데이터 타입으로 갖고 있는 s2의 name 이라고 하는 인스턴스 변수에 접근해야함.
-    //                              그러므로 equals 메소드 안에서 Object 데이터 타입으로 바뀐 s2를 다시 Student 라고 하는 데이터 타입으로 다시 전환시킬 필요가 있음.
+    //                              하지만 우리가 결국 필요한 것은 Student 를 데이터 타입으로 갖고 있는 s2의 name 이라고 하는 인스턴스 변수에 접근하는 것이다.
+    //                              그러므로 equals 메소드 안에서 Object 데이터 타입으로 바뀐 s2를 다시 명시적으로 Student 라고 하는 데이터 타입으로 다시 전환시킬 필요가 있음.
     public boolean equals(Object obj){  // ← 매개변수로 들어올 데이터가 어떤 타입인지 모를때 Object 로 써주는 건 아주 흔한 문법!!! 잘 기억하자
         Student s = (Student)obj; // ← 명시적 형변환
         return this.name == s.name;

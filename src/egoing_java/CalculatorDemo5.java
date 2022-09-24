@@ -1,8 +1,8 @@
 package egoing_java;
 
 // 상속 (Inheritance)
-// : extends 라는 keyword를 씀!
-// 1. 코드 중복 제거 (부모가 만든 코드를 자식이 쓸 수 있음!)
+// : extends 라는 키워드를 씀!
+// 1. 코드 중복 제거 (부모가 만든 코드를 자식이 상속하여 쓸 수 있음!)
 // 2. 유지 보수의 편리성!
 // 3. 가독성 ↑ (중요한 임무를 제외한 나머지 코드는 전부다 부모에다 짜놓을수 있기 때문!)
 
@@ -69,8 +69,8 @@ public class CalculatorDemo5 {
         c4.setOperands(2, 3);
         c4.sum();
         c4.avg();
-        // c3.subtract(); // Not working
-        // c3.multiply(); // Not working
+        // c3.subtract(); // 에러
+        // c3.multiply(); // 에러
     }
 }
 

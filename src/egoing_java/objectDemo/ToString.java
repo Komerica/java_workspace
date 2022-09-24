@@ -24,8 +24,8 @@ public class ToString {
     public static void main(String[] args) {
         Calculator c1 = new Calculator();
         c1.setOperands(10, 20);
-        System.out.println(c1);
         System.out.println(c1.toString());
+        System.out.println(c1);
         // ↑ 위의 두줄 결과 값이 같은 이유?
         //  : 인스턴스를 담고 있는 변수만을 출력하면 자바는 내부적으로 toString()이라는 메소드를 호출하도록 약속되어있음.
         // 결과: egoing_java.Object.Calculator@4eec7777
