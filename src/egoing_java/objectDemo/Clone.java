@@ -28,6 +28,9 @@ class Teacher implements Cloneable {
     public Object clone() throws CloneNotSupportedException{
         return super.clone();
     }
+    // 🟪 ↑ 별다른 수정을 하지 않고 clone() 메소드를 그대로 overriding 해서 가져오는 이유? 🟪
+    //  : clone() 을 "Ctrl + 클릭" 해서 보면 java.lang 패키지에 속해있고, 접근제어자는 protected 인것을 볼 수 있다.
+    //    즉, 다른 패키지에 속해 있으면서 접근제어자가 protected 인 메소드에 접근하려면 overriding 을 해서 같은 패키지(egoing_java.objectDemo)로 가져와야함.
 }
 
 public class Clone {
@@ -77,7 +80,7 @@ public class Clone {
         // 4. Object 클래스가 모든 클래스의 부모클래스 이기 때문에,
         //    모든 클래스(ex; Teacher)는 Object 클래스를 데이터 타입으로 가지고 있는 변수(obj)에 담길 수 있다. (인스턴스화 돼서 변수에 담길 수 있다)
         //      Ex) Object obj = t2;   // ← t2는 Teacher 를 데이터 타입으로 가지고 있다.
-        // 5. 반대로, Object 데이터 타입에 담겨 있는 인스턴스(t1)는 원래의 클래스(Teacher)가 되려면 명시적으로 형변환을 해야한다!
+        //    반대로, Object 데이터 타입에 담겨 있는 인스턴스(t1)는 원래의 클래스(Teacher)가 되려면 명시적으로 형변환(Explicit Conversion/Casting) 을 해야한다!
         //      Ex) Teacher t2 = (Teacher)t1.clone();   // ← t1는 Object 를 데이터 타입으로 가지고 있다. 그러므로 (Teacher)을 해서 명시적으로 형변환을 해줘야한다.
     }
 }
