@@ -13,7 +13,7 @@ package egoing_java.objectDemo;
 //   equals 를 쓴다.
 
 // → 원시 데이터형(Primitive Data Type)
-//   즉, byte, short, int, long float, double, boolean, char 을 사용할때는
+//   즉, byte, short, int, long, float, double, boolean, char 을 사용할때는
 //   비교연산자(==)를 사용
 
 // 🟩 가비지 컬렉션(garbage collection)
