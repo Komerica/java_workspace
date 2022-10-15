@@ -14,9 +14,9 @@ public class Conversion {
         // float < double  ->  So, 데이터 손실이 발생할 수 있기 때문에 Error!
         // float b = 3.0;  // 3.0뒤에 아무것도 없으면 double형
 
-        // 형 변환이 가능한 경우
-        // byte < short < int < long < float < double
-        //         char < int < long < float < double
+        // 🟥 형 변환이 가능한 경우
+        // byte(1byte) < short(2byte) < int(4byte) < long(8byte) < float(4byte) < double
+        //                       char < int(4byte) < long(8byte) < float(4byte) < double
 
         // Ex1)
         int c = 3;
