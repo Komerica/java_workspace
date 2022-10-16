@@ -8,7 +8,7 @@ public class Type {
         // : 실제 값을 저장
         // 1. boolean
         // 2. char
-        // 3. byte (1byte)
+        // 3. byte (1byte): 이진 데이터 (binary data). 주로 사진, 실행파일 등등 에 쓰임 
         // 4. short (2byte)
         // 5. int (4byte)
         // 6. long (8byte)
