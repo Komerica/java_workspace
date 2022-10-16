@@ -41,10 +41,10 @@ public class Literal {
         double d4 = .10;        // 0.10 에서 앞에 0을 생략한것
         double d5 = 1e3;        // 10에 3제곱(10^3) = 1000.0   Why? → 기호 e는 실수형에 사용되는 것이기 때문에!
 
-
-        // 🟥 형 변환이 가능한 경우
-        // byte(1byte) < short(2byte) < int(4byte) < long(8byte) < float(4byte) < double
-        //                       char < int(4byte) < long(8byte) < float(4byte) < double
+        //                          단순히 byte로만 보면 long이 크지만, float의 표현 방식때문에 더 많은 수를 표현할 수 있다! (자바의정석 18강 20:00참고)
+        // 🟥 형 변환이 가능한 경우                       10^19          10^38
+        // byte(1byte) < short(2byte) < int(4byte) < long(8byte) < float(4byte) < double(8byte)
+        //                char(2byte) < int(4byte) < long(8byte) < float(4byte) < double(8byte)
 
         // 🟧 접미사 생략가능한 타입
         // int, double
