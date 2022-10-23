@@ -1,7 +1,7 @@
 package java_chobo;
 
 public class RandomNum {
-    public static void main(String[] args) {
+    public static void main(StrClass[] args) {
         // 0.0(포함)과 1.0(불포함)사이의 임의의 double 값을 반환!
         // 0.0 <= Math.random() < 1.0
         double d = Math.random();

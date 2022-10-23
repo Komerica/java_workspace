@@ -1,7 +1,7 @@
 package java_chobo;
 
 public class Overflow {
-    public static void main(String[] args) {
+    public static void main(StrClass[] args) {
         short sMin = -32768, sMax = 32767;  // short: -32768 ~ 32767
         char cMin = 0, cMax = 65535;        // char: 0 ~ 65535
 

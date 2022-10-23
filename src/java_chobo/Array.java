@@ -1,10 +1,9 @@
 package java_chobo;
 
 import java.util.Arrays;
-import java.util.Random;
 
 public class Array {
-    public static void main(String[] args) {
+    public static void main(StrClass[] args) {
         //    ↓ score → 참조변수(Reference variable)
         //              : A variable that points to an object of a given class, letting you access the value of an object.
         int[] score = new int[5];

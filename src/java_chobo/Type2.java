@@ -1,7 +1,7 @@
 package java_chobo;
 
 public class Type2 {
-    public static void main(String[] args) {
+    public static void main(StrClass[] args) {
         // 종류 \ 크기(byte)     1       2      4       8
         // 논리형             boolean
         // 문자형                      char

@@ -1,7 +1,7 @@
 package java_chobo;
 
 public class Round {
-    public static void main(String[] args) {
+    public static void main(StrClass[] args) {
         // 실수를 소수점 첫째자리에서 반올림한 정수를 반환
         long result = Math.round(4.52);
         System.out.println(result);

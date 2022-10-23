@@ -3,7 +3,7 @@ package java_chobo;
 import java.util.Date;
 
 public class Type {
-    public static void main(String[] args) {
+    public static void main(StrClass[] args) {
         // 🟩 기본형 (Primitive type)
         // : 실제 값을 저장
         // 1. boolean

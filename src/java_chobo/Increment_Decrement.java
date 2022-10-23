@@ -1,7 +1,7 @@
 package java_chobo;
 
 public class Increment_Decrement {
-    public static void main(String[] args) {
+    public static void main(StrClass[] args) {
         int i = 0, j = 0;
         j = ++i;        // 전위형(pre-increment)
         // ↓ 위의 코드를 두줄로 표현하면..
