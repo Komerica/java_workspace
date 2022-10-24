@@ -2,16 +2,16 @@ package java_chobo;
 
 public class VariablesDemo {
     public static void main(String[] args) {
-        Card c = new Card();
+        Cards c = new Cards();
         c.kind = "HEART";
         c.number = 5;
         // c.width = 200;   // 가능하지만 권장x
-        Card.width = 200;   // CV는 클래스 이름으로 접근!
+        Cards.width = 200;   // CV는 클래스 이름으로 접근!
         // c.height = 300;  // 가능하지만 권장x
-        Card.height = 300;  // CV는 클래스 이름으로 접근!
+        Cards.height = 300;  // CV는 클래스 이름으로 접근!
     }
 }
-class Card {
+class Cards {
     // IV(Instance Variables): 개별적인 부분
     String kind;    // 무늬
     int number;        // 숫자
