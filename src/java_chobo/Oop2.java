@@ -1,5 +1,10 @@
 package java_chobo;
 
+// 🟩 클래스란?
+// 1. 설계도   ✔ (아래에서 다룰 내용!)
+// 2. 데이터 + 함수
+// 3. 사용자 정의 타입
+
 class Tv1 {
     String color;
     boolean power;
