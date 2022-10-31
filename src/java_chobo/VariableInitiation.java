@@ -31,8 +31,8 @@ public class VariableInitiation {
         //          ***참조형 변수가 가질 수 있는 값***
         //            1.null(기본값)   2.객체주소
         //  2. 초기화 블럭 (복잡한 초기화; 여러문장 넣기)
-        //    - 인스턴스 초기화 블럭: {}     (iv 초기화할때 사용)
-        //    - 클래스 초기화 블럭: static {}   (cv 초기화할때 사용)
+        //    - 인스턴스 초기화 블럭(Instance Initialization Block; IIB): {}     (iv 초기화할때 사용)
+        //    - 클래스 초기화 블럭(Static Initialization Block; SIB): static {}   (cv 초기화할때 사용)
         //  3. 생성자 (복잡한 초기화)
         //    - iv 초기화할때 사용
         //      Ex) Car(String color, String gearType, int door) {
@@ -59,8 +59,8 @@ public class VariableInitiation {
 class InitTest2 {
     static int cv = 1;  // 명시적 초기화
     int iv = 1;         // 명시적 초기화
-    static {cv = 2;}    // 클래스 초기화 블럭
-    {iv = 2;}           // 인스턴스 초기화 블럭
+    static {cv = 2;}    // 클래스 초기화 블럭 (Static Initialization Block)
+    {iv = 2;}           // 인스턴스 초기화 블럭 (Instance Initialization Block)
     InitTest2() {   // 생성자
         iv = 3;
     }

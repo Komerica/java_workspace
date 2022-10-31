@@ -36,6 +36,9 @@ public class Inheritance {
         stv.caption = true;
         stv.displayCaption("Hello, World!");
 
+        // ✔ 클래스의 관계
+        //    1. 상속(Inheritance)     2. 포함(Composite)
+
         // 🟩 상속(Inheritance)의 특징
         //    1. 자손은 조상의 모든 멤버를 상속받는다. (생성자, 초기화 블럭 제외)
         //       So, 자손의 멤버 개수는 조상보다 적을 수 없다. (같거나 많다!)
