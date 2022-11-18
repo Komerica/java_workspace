@@ -19,5 +19,6 @@ public class MyParentTest2 {
         //System.out.println(p.dft);  // ❌
         //System.out.println(p.prt);  // ❌
         System.out.println(p.pub);    // ✔
+
     }
 }
