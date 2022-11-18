@@ -57,10 +57,10 @@ public class VariableInitiation {
     }
 }
 class InitTest2 {
-    static int cv = 1;  // 명시적 초기화
-    int iv = 1;         // 명시적 초기화
-    static {cv = 2;}    // 클래스 초기화 블럭 (Static Initialization Block)
-    {iv = 2;}           // 인스턴스 초기화 블럭 (Instance Initialization Block)
+    static int cv = 1;  // 명시적 초기화(간단초기화)
+    int iv = 1;         // 명시적 초기화(간단초기화)
+    static {cv = 2;}    // 클래스 초기화 블럭 (Static Initialization Block) (복잡한 초기화=복잡초기화)
+    {iv = 2;}           // 인스턴스 초기화 블럭 (Instance Initialization Block) (복잡한 초기화=복잡초기화)
     InitTest2() {   // 생성자
         iv = 3;
     }
