@@ -1,5 +1,9 @@
 package java_chobo.polymorphismDemo;
 
+// 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+// 🟥🟥🟥 !!!매우 중요!!! 🟥🟥🟥
+// 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+
 class Car {
     String color;
     int door;
