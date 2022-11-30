@@ -59,7 +59,7 @@ package java_chobo;
 //        fe2.water();
 // 🟩 기본형의 형변환
 //   Ex) 3.6 -> (int로 형변환) -> 3
-public class PolymorphismDemo {
+public class Polymorphism1 {
     public static void main(String[] args) {
 
     }
