@@ -54,6 +54,8 @@ class Audio extends Product {
 class Buyer {   // 물건 사는 사람
     int money = 1000;   // 소유금액
     int bonusPoint = 0; // 보너스 점수
+    Product[] cart = new Product[10];   // 🟧 구입한 물건을 담을 배열
+    int i = 0;
     /*void buy(Television t) {    // 🟢 만약 여기서 매개변수 타입을 Television 로 주면 물건이 추가될때마다 buy method 를 overloading 해줘야한다..
         money -= t.price;
         bonusPoint += t.bonusPoint;
@@ -66,6 +68,7 @@ class Buyer {   // 물건 사는 사람
         }
         money -= p.price;
         bonusPoint += p.bonusPoint;
+        cart[i++] = p;  // 🟧 구입한 물건을 장바구니에 추가! (많이 쓰는 방법!! 꼭 외워두자)
         System.out.println("You have purchased " + p + "!");
         System.out.println("Your bonus point is " + bonusPoint);
     }
@@ -74,6 +77,18 @@ class Buyer {   // 물건 사는 사람
     //     Product p2 = new Computer();
     //     Product p3 = new Audio();
     //     ↑ ↑ 이것들(다형성)이 가능한 것과 같은 맥락으로 가능한 것이라고 생각하면 됨!
+    // 🟥 메소드의 매개변수로 조상타입의 참조변수(Product p)를 사용해서 하나의 메소드로 여러 타입(Television/Computer/Audio)의 객체들을 받을 수 있음! 🟥
+    void summary() {    // 🟧 구입한 물건을 나열하여 요약해주는 메소드
+        int sum = 0;
+        String itemList = "";
+        for (int i = 0; i < cart.length; i++) {
+            if(cart[i]==null) break;
+            sum += cart[i].price;
+            itemList += cart[i] + ", ";
+        }
+        System.out.println("The total is " + sum + ".");
+        System.out.println("The products you have purchased today is " + itemList);
+    }
 }
 
 public class Polymorphism2 {
@@ -93,5 +108,6 @@ public class Polymorphism2 {
         b.buy(new Computer());
         b.buy(new Computer());
         b.buy(new Computer());
+        b.summary();
     }
 }
