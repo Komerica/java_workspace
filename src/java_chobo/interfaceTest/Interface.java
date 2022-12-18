@@ -1,4 +1,4 @@
-package java_chobo;
+package java_chobo.interfaceTest;
 
 // 🟩 인터페이스(interface)
 //    : 추상메서드의 집합(프로그래밍 관점)
