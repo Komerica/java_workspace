@@ -19,6 +19,7 @@ package java_chobo.interfaceTest;
 //          ↗    ↑    ↖
 //      SCV    Tank   Dropship
 
+// 🟥 스타크래프트 예시!! 🟥
 abstract class Unit {
     static int Max_HP;
     int hp;
@@ -46,6 +47,10 @@ class Marine extends GroundUnit {
 }
 interface Repairable {
     void repair(Repairable r);
+
+    default void newMethod() {
+        System.out.println("haha");
+    }
 }
 class SCV extends GroundUnit implements Repairable {
     SCV() {
@@ -60,6 +65,11 @@ class SCV extends GroundUnit implements Repairable {
             }
             System.out.println("Done repairing!");
         }
+    }
+    public void repair2(Unit u) {
+        if (u instanceof Repairable) {
+            System.out.println("haha2");
+        };
     }
     public String toString() {
         return "SCV";
@@ -123,5 +133,6 @@ public class InterfaceTest2 {
         SCV scv = new SCV();
         scv.repair(new Tank());
         scv.repair(new Dropship());
+        scv.repair2(new Tank());
     }
 }
